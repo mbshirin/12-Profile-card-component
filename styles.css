@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./assets/images/bg-pattern-top.svg) top -509px left -223px / 60% no-repeat,
+        url(./assets/images/bg-pattern-bottom.svg) bottom -758px right -223px / 60% no-repeat,
+        hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-top: 10%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: white;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+
+.card .image img {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.card .header {
+    width: 100%;
+    margin-top: 11%;
+    border-bottom: 1px solid hsl(229, 9%, 92%);
+}
+
+.card .header h2 {
+    text-align: center;
+    color: hsl(229, 23%, 23%);
+}
+
+.card .header h2 span {
+    color: hsl(0, 0%, 59%);
+    font-weight: normal;
+    margin-inline-start: 0.625rem;
+}
+
+.card .header p {
+    color: hsl(0, 0%, 59%);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.card .followers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.card .followers .part h2 {
+    color:hsl(229, 23%, 23%);
+    text-align: center;
+}
+
+.card .followers .part p {
+    color: hsl(0, 0%, 59%);
+    font-size: 0.625rem;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.card .avatar img{
+    border-radius: 50%;
+    border: 0.375rem solid white;
+    position: absolute;
+    top: 22%;
+    left: 34%;
+}
+
+@media screen and (max-width:767px) {
+    body {
+        margin-top: 38%;
+        background: url(./assets/images/bg-pattern-top.svg) top -600px left -700px / auto no-repeat,
+                    url(./assets/images/bg-pattern-bottom.svg) bottom -600px right -700px / auto no-repeat,
+                    hsl(185, 75%, 39%);
+    }
+
+    .card .image img {
+        width: 100%;
+    }
+
+    .card .avatar img {
+        left: 33%;
+    }
+
+    .card .header {
+        margin-top: 17%;
+    }
+}
